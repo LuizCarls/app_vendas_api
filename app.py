@@ -53,7 +53,7 @@ def add_produto(form: ProdutoSchema):
 
 
 @app.get('/buscar_produtos', tags=[produto_tag],
-         responses={"200": ListagemProdutosSchema, "404": ErrorSchema})
+         responses={"200": ListagemVendasProdutosSchema, "404": ErrorSchema})
 def get_produtos():
     """Faz a busca por todos os Produto cadastrados
 
