@@ -17,7 +17,7 @@ class ProdutoBuscaSchema(BaseModel):
     nome: str = "Teste"
 
 
-class ListagemProdutosSchema(BaseModel):
+class ListagemVendasProdutosSchema(BaseModel):
     """ Define como uma listagem de produtos será retornada.
     """
     produtos:List[ProdutoSchema]
